@@ -57,6 +57,67 @@ The Energy Optimization Agent:
 
 ---
 
+## Project Architecture
+
+```text
+                    +----------------------+
+                    |        User          |
+                    +----------+-----------+
+                               |
+                               v
+                 +---------------------------+
+                 |   Google Colab Notebook   |
+                 +---------------------------+
+                 | Sample Energy Dataset     |
+                 | Data Visualization        |
+                 | AI Analysis (Gemini)      |
+                 | Report Generation         |
+                 +------------+--------------+
+                              |
+                              | GitHub
+                              v
+                 +---------------------------+
+                 |     n8n Workflow          |
+                 +---------------------------+
+                 | Manual Trigger            |
+                 | Energy Data               |
+                 | Calculate Total Energy    |
+                 | Google Gemini AI          |
+                 | Gmail Report              |
+                 +------------+--------------+
+                              |
+                              v
+                     +-----------------+
+                     |      User       |
+                     |  Email Report   |
+                     +-----------------+
+```
+
+---
+
+## n8n Workflow
+
+```text
+Manual Trigger
+      │
+      ▼
+Sample Energy Data
+      │
+      ▼
+Calculate Total Energy
+      │
+      ▼
+Google Gemini AI
+      │
+      ▼
+Generate AI Report
+      │
+      ▼
+Send Report via Gmail
+```
+
+---
+
 ## Project Workflow
 
 Google Colab
