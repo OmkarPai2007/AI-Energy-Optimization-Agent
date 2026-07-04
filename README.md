@@ -155,6 +155,6 @@ Email Report
 
 ## Author
 
-Omkar Hemanth Pai
+Name Here
 
 AICTE Generative AI & Agentic System Engineering Internship
